@@ -1,0 +1,136 @@
+/* CSS Document */
+
+button[type=submit],input[type=reset] {
+    background-color: rgb(217, 53, 236); /* Màu nền: cam đậm */
+    color: white; /* Màu chữ: trắng */
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 25px; /* Bo góc thành hình tròn ngang */
+    cursor: pointer; /* Đổi con trỏ khi di chuột vào nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+button[type=submit]:hover,input[type=reset]:hover {
+    background-color: rgb(84, 202, 245); /* Màu nền khi hover: xanh dương */
+    border-radius: 25px; /* Bo góc khi hover */
+}
+.blink {
+    background-color: rgb(226, 52, 232); /* Màu nền ban đầu */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    border-radius: 25px; /* Bo góc thành hình tròn ngang */
+    font-weight: bold;
+    cursor: pointer;
+    animation: blinkEffect 1s infinite; /* Chạy hiệu ứng nhấp nháy */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.blink:hover {
+    background-color: rgb(82, 200, 243); /* Màu nền khi hover */
+}
+.blink {
+    background-color: rgb(226, 52, 232); /* Màu nền ban đầu */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    border-radius: 25px; /* Bo góc thành hình tròn ngang */
+    font-weight: bold;
+    cursor: pointer;
+    animation: blinkEffect 1s infinite; /* Chạy hiệu ứng nhấp nháy */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.blink:hover {
+    background-color: rgb(82, 200, 243); /* Màu nền khi hover */
+}
+input, select, textarea {
+    border: 2px solid rgb(62, 219, 219); /* Viền: xanh đậm */
+    border-radius: 15px; /* Thay đổi giá trị bo góc thành 15px */
+    padding: 8px 12px 8px 16px;
+    padding: 10px 20px; /* Khoảng cách trong nút */
+}
+input:focus, select:focus, textarea:focus {
+    border: 2px solid rgb(20, 218, 253); /* Viền khi focus */
+    color: #111010; /* Màu chữ khi focus */
+    border-radius: 15px; /* Đảm bảo bo góc khi focus */
+}
+/* Khung chứa bảng */
+/* Khung chứa bảng */
+.table-container {
+    width: 50%; /* Đã thay đổi chiều rộng thành 50% */
+    margin: 0 auto; /* Căn giữa bảng theo chiều ngang */
+    padding: 20px;
+    background-color: #f9f9f9; /* Màu nền của khung */
+    border-radius: 15px; /* Bo góc của khung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung */
+}
+
+/* Cấu hình bảng */
+table {
+    width: 100%; /* Đặt chiều rộng của bảng là 100% để bảng rộng toàn bộ khung */
+    border-collapse: collapse; /* Không có khoảng cách giữa các cell */
+    border-radius: 10px; /* Bo góc bảng */
+    overflow: hidden; /* Đảm bảo các viền bo góc không bị tràn ra ngoài */
+}
+
+/* Định dạng các ô trong bảng */
+th, td {
+    border: 10px solid #ddd; /* Viền của các cell */
+    padding: 10px; /* Khoảng cách trong cell */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+/* Định dạng hàng tiêu đề */
+th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề */
+    font-weight: bold; /* Làm đậm chữ tiêu đề */
+}
+
+/* Tạo hiệu ứng hover cho các hàng */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover */
+}
+
+.mainmenu li{
+	list-style:none;
+	}
+a{
+	text-decoration:none;
+	}
+ul.menu1{
+	background:hsl(290, 77%, 54%); /* Màu nền: xanh dương */
+	width:100%;
+	height:36px;
+	}
+.menu1 a{
+	color:#fff; /* Màu chữ: trắng */
+	}
+ul.menu1>li{
+	float:left;
+	padding:10px;
+	}
+/* Định dạng các ô trong bảng */
+th, td {
+    border: 1px solid #ddd; /* Viền của các cell */
+    padding: 10px; /* Khoảng cách trong cell */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+/* Định dạng hàng tiêu đề */
+th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề */
+    font-weight: bold; /* Làm đậm chữ tiêu đề */
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("test.jpg"); /* Đảm bảo rằng đường dẫn đúng */
+    background-size: cover; /* Đảm bảo ảnh phủ kín toàn bộ trang */
+}
+
+
+

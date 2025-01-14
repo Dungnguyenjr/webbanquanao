@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước phần tử */
+}
+
+/* Định dạng cho khung Hello Admin */
+.hello-admin {
+    color: rgb(28, 20, 20); /* Màu chữ */
+    padding: 20px 30px;
+    border-radius: 15px; /* Góc bo tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+    margin-bottom: 20px;
+}
+
+/* Icon chào mừng */
+.greeting-icon {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+/* Văn bản Hello Admin */
+.greeting-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.dangkithanhvien {
+    background: rgb(95, 238, 238); /* Màu nền: xanh đậm */
+    color: #fff; /* Màu chữ: trắng */
+    border: 5px dashed #fff; /* Viền: trắng, nét đứt */
+    padding: 20px 30px;
+    line-height: 24px;
+}
+
+input, select, textarea {
+    border: 2px solid rgb(62, 219, 219); /* Viền: xanh đậm */
+    border-radius: 25px; /* Bo góc thành hình tròn ngang */
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    transition: border-color 0.3s ease; /* Hiệu ứng chuyển màu viền */
+}
+
+input:hover, select:hover, textarea:hover {
+    border: 2px solid rgb(75, 248, 207); /* Viền khi hover */
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid rgb(20, 218, 253); /* Viền khi focus */
+    color: #111010; /* Màu chữ khi focus */
+}
+
+input[type=file] {
+    border: none;
+}
+
+input[type=submit], input[type=reset], button[type=submit] {
+    background: rgb(221, 46, 231); /* Màu nền: cam đậm */
+    color: #fff; /* Màu chữ: trắng */
+    border: 2px solid rgb(68, 203, 237); /* Viền: cam đậm */
+    font-weight: bold;
+    margin: 10px 5px;
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    border-radius: 25px; /* Bo góc thành hình tròn ngang */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+input[type=submit]:hover, input[type=reset]:hover, button[type=submit]:hover {
+    background: rgb(84, 202, 245); /* Màu nền khi hover */
+    border: 2px solid rgb(233, 60, 239); /* Viền khi hover */
+}
+
+.title {
+    font-size: 24px;
+    color: #fff; /* Màu chữ: trắng */
+}
+
+/* CSS cho menu */
+.mainmenu li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.menu1 {
+    background: hsl(290, 77%, 54%); /* Màu nền: xanh dương */
+    width: 100%;
+    height: 36px;
+}
+
+.menu1 a {
+    color: #fff; /* Màu chữ: trắng */
+}
+
+ul.menu1 > li {
+    float: left;
+    padding: 10px;
+}
+
+/* Menu cấp 2 */
+ul.menu1 > li > ul.menu2 {
+    display: none;
+    background: rgb(181, 43, 206); /* Màu nền: xanh dương */
+    margin-left: -10px;
+    line-height: 20px;
+}
+
+ul.menu1 > li:hover > ul.menu2 {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+}
+
+ul.menu1 > li:hover {
+    background: rgb(181, 43, 206); /* Màu nền khi hover */
+}
+
+.header_left {
+    width: 25%;
+    float: left;
+}
+
+.header_right {
+    width: 75%;
+    float: left;
+}
+
+.header, .content, .footer, .header_1, .header_2 {
+    width: 100%;
+    float: left;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; /* Để các viền bảng không bị chồng lên nhau */
+}
+
+/* Lớp blink */
+.blink {
+    background-color: rgb(226, 52, 232); /* Màu nền ban đầu */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    border-radius: 25px; /* Bo góc thành hình tròn ngang */
+    font-weight: bold;
+    cursor: pointer;
+    animation: blinkEffect 1s infinite; /* Chạy hiệu ứng nhấp nháy với chu kỳ 1s */
+    text-align: center; /* Đảm bảo chữ nằm ở giữa nút */
+    display: inline-block; /* Để có thể căn chỉnh như một phần tử inline */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.blink:hover {
+    background-color: rgb(82, 200, 243); /* Thay đổi màu khi hover */
+}
+
+/* Bo góc tròn cho các ô trong bảng */
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Tạo hiệu ứng cho các ô khi hover */
+tr:hover {
+    background-color: #f1f1f1;
+}
+/* Định dạng cho menu chính */
+ul.menu1 {
+    background: hsl(290, 77%, 54%); /* Màu nền: xanh dương */
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+ul.menu1 li {
+    position: relative;
+    padding: 10px 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+ul.menu1 a {
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng khi hover menu chính */
+ul.menu1 > li:hover {
+    background-color: rgb(181, 43, 206); /* Màu nền khi hover */
+    cursor: pointer;
+}
+
+ul.menu1 > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Màu nền khi hover liên kết */
+    color: #ddd; /* Màu chữ khi hover */
+}
+
+/* Menu con */
+ul.menu1 > li > ul {
+    display: none; /* Ẩn menu con */
+    position: absolute;
+    top: 100%; /* Đưa menu con xuống dưới */
+    left: 0;
+    background-color: rgb(181, 43, 206);
+    border-radius: 6px;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+
+/* Hiển thị menu con khi hover */
+ul.menu1 > li:hover > ul {
+    display: block;
+}
+
+/* Các mục trong menu con */
+ul.menu1 > li > ul > li {
+    padding: 10px;
+    background: rgb(181, 43, 206); /* Màu nền menu con */
+}
+
+ul.menu1 > li > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng khi hover menu con */
+ul.menu1 > li > ul > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Màu nền khi hover trong menu con */
+    color: #ddd; /* Màu chữ khi hover trong menu con */
+}
+
+/* Cải thiện hiệu ứng cho menu chính và submenu */
+ul.menu1 > li:hover > a {
+    background-color: rgba(255, 255, 255, 0.2); /* Màu nền khi hover mục menu chính */
+    color: #ddd; /* Màu chữ khi hover mục menu chính */
+}
+
+ul.menu1 > li > a {
+    border-radius: 6px;
+}
+
+/* Hiệu ứng cho menu */
+ul.menu1 li a {
+    transition: all 0.3s ease-in-out;
+}

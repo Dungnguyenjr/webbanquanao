@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	}
+.dangkithanhvien{
+	background:rgb(95, 238, 238); /* Màu nền: xanh đậm */
+	color:#fff; /* Màu chữ: trắng */
+	border:5px dashed #fff; /* Viền: trắng, nét đứt */
+	padding:20px 30px;
+	line-height:24px;
+	}
+input,select,textarea{
+	border:2px solid rgb(62, 219, 219); /* Viền: xanh đậm */
+	border-radius:8px;
+	padding:8px 12px 8px 16px;
+	padding: 10px 20px; /* Khoảng cách trong nút (tăng chiều rộng để tạo hình tròn ngang) */
+	border-radius: 25px; /* Bo góc thành hình tròn ngang */
+	
+	}
+input:hover,select:hover,textarea:hover{
+	border:2px solid rgb(75, 248, 207); /* Viền khi hover: đỏ */
+	}
+input:focus,select:focus,textarea:focus{
+	border:2px solid rgb(20, 218, 253); /* Viền khi focus: đỏ */
+	/* background:rgb(185, 243, 189); Màu nền khi focus: xám đậm */
+	color:#111010; /* Màu chữ khi focus: trắng */
+	padding: 10px 20px; /* Khoảng cách trong nút (tăng chiều rộng để tạo hình tròn ngang) */
+	border-radius: 25px; /* Bo góc thành hình tròn ngang */
+	}
+input[type=file]{
+	border:none;
+	}
+input[type=submit],input[type=reset]{
+	/* background:rgb(84, 202, 245); Màu nền: cam đậm */
+	background:rgb(221, 46, 231); /* Màu nền: cam đậm */
+	color:#fff; /* Màu chữ: trắng */
+	border:2px solid rgb(68, 203, 237); /* Viền: cam đậm */
+	font-weight:bold;
+	margin:10px 5px 10px 5px;
+	padding: 10px 20px; /* Khoảng cách trong nút (tăng chiều rộng để tạo hình tròn ngang) */
+	border-radius: 25px; /* Bo góc thành hình tròn ngang */
+	}
+input[type=submit]:hover,input[type=reset]:hover{
+	background:rgb(84, 202, 245); /* Màu nền khi hover: đỏ */
+	color:#fff; /* Màu chữ khi hover: trắng */
+	border:2px solid rgb(233, 60, 239); /* Viền khi hover: đỏ */
+	padding: 10px 20px; /* Khoảng cách trong nút (tăng chiều rộng để tạo hình tròn ngang) */
+	border-radius: 25px; /* Bo góc thành hình tròn ngang */
+	}
+button[type=submit] {
+	background-color: rgb(217, 53, 236); /* Màu nền: cam đậm */
+	color: white; /* Màu chữ: trắng */
+	border: none; 
+	padding: 10px 20px; 
+	text-align: center;
+	padding: 10px 20px; /* Khoảng cách trong nút (tăng chiều rộng để tạo hình tròn ngang) */
+	border-radius: 25px; /* Bo góc thành hình tròn ngang */
+	
+	}
+button[type=submit]:hover {
+	background-color: rgb(84, 202, 245);/* Màu nền khi hover: xanh dương */
+	
+	}
+.title{
+	font-size:24px;
+	color:#fff; /* Màu chữ: trắng */
+	}
+/*css cho menu*/
+.mainmenu li{
+	list-style:none;
+	}
+a{
+	text-decoration:none;
+	}
+ul.menu1{
+	background:hsl(290, 77%, 54%); /* Màu nền: xanh dương */
+	width:100%;
+	height:36px;
+	}
+.menu1 a{
+	color:#fff; /* Màu chữ: trắng */
+	}
+ul.menu1>li{
+	float:left;
+	padding:10px;
+	}
+/*menu cấp 2*/
+ul.menu1>li>ul.menu2{
+	display:none;
+	background:rgb(181, 43, 206); /* Màu nền: xanh dương */
+	margin-left:-10px;
+	line-height:20px;
+	}
+ul.menu1>li:hover>ul.menu2{
+	display:block;
+	position:absolute;
+	margin-top:10px;
+	}	
+ul.menu1>li:hover{
+	background:rgb(181, 43, 206); /* Màu nền khi hover: cam đậm */
+	}
+.header_left{
+	width:25%;
+	float: left;
+}
+.header_right{
+	width:75%;
+	float: left;
+}
+.header,.content,.footer,.header_1,.header_2{
+	width:100%;
+	float: left;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse; /* Để các viền bảng không bị chồng lên nhau */
+  }
+  @keyframes blinkEffect {
+	0% { background-color: rgb(57, 199, 242); } /* Màu nền đầu tiên */
+	50% { background-color: rgb(245, 105, 217); } /* Màu nền nhấp nháy (màu hồng) */
+	100% { background-color: rgb(57, 179, 232); } /* Trở lại màu nền ban đầu */
+  }
+  
+  /* Lớp blink */
+  .blink {
+	background-color: rgb(226, 52, 232); /* Màu nền ban đầu */
+	color: white; /* Màu chữ */
+	border: none; /* Bỏ viền */
+	padding: 10px 20px; /* Khoảng cách trong nút (tăng chiều rộng để tạo hình tròn ngang) */
+	border-radius: 25px; /* Bo góc thành hình tròn ngang */
+	font-weight: bold;
+	cursor: pointer;
+	animation: blinkEffect 1s infinite; /* Chạy hiệu ứng nhấp nháy với chu kỳ 1s */
+	text-align: center; /* Đảm bảo chữ nằm ở giữa nút */
+	display: inline-block; /* Để có thể căn chỉnh như một phần tử inline */
+	transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+  }
+  
+  .blink:hover {
+	background-color: rgb(82, 200, 243); /* Thay đổi màu khi hover */
+  }
+  
